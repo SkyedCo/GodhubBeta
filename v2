@@ -10,6 +10,9 @@ local Main = Instance.new("Frame")
 local Main_2 = Instance.new("TextLabel")
 local Visuals = Instance.new("TextButton")
 local OldGod = Instance.new("TextButton")
+local VoidTp = Instance.new("TextButton")
+local ZHub = Instance.new("TextButton")
+local InfYield = Instance.new("TextButton")
 local VisualsTab = Instance.new("Frame")
 local Visuals_2 = Instance.new("TextLabel")
 local Main_3 = Instance.new("TextButton")
@@ -82,6 +85,45 @@ OldGod.TextColor3 = Color3.fromRGB(229, 255, 0)
 OldGod.TextSize = 25.000
 OldGod.TextWrapped = true
 
+VoidTp.Name = "Void Tp"
+VoidTp.Parent = Main
+VoidTp.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+VoidTp.BorderColor3 = Color3.fromRGB(40, 40, 40)
+VoidTp.Position = UDim2.new(0.0437956229, 0, 0.324404746, 0)
+VoidTp.Selectable = false
+VoidTp.Size = UDim2.new(0, 249, 0, 50)
+VoidTp.Font = Enum.Font.Cartoon
+VoidTp.Text = "Void TP"
+VoidTp.TextColor3 = Color3.fromRGB(229, 255, 0)
+VoidTp.TextSize = 25.000
+VoidTp.TextWrapped = true
+
+ZHub.Name = "Z Hub"
+ZHub.Parent = Main
+ZHub.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ZHub.BorderColor3 = Color3.fromRGB(40, 40, 40)
+ZHub.Position = UDim2.new(0.0437956229, 0, 0.473214269, 0)
+ZHub.Selectable = false
+ZHub.Size = UDim2.new(0, 249, 0, 50)
+ZHub.Font = Enum.Font.Cartoon
+ZHub.Text = "Zer0 Hub"
+ZHub.TextColor3 = Color3.fromRGB(229, 255, 0)
+ZHub.TextSize = 25.000
+ZHub.TextWrapped = true
+
+InfYield.Name = "Inf Yield"
+InfYield.Parent = Main
+InfYield.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+InfYield.BorderColor3 = Color3.fromRGB(40, 40, 40)
+InfYield.Position = UDim2.new(0.0437956229, 0, 0.622023821, 0)
+InfYield.Selectable = false
+InfYield.Size = UDim2.new(0, 249, 0, 50)
+InfYield.Font = Enum.Font.Cartoon
+InfYield.Text = "Inf yield"
+InfYield.TextColor3 = Color3.fromRGB(229, 255, 0)
+InfYield.TextSize = 25.000
+InfYield.TextWrapped = true
+
 VisualsTab.Name = "VisualsTab"
 VisualsTab.Parent = GuiHolder
 VisualsTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -138,7 +180,7 @@ CloseGui.TextWrapped = true
 
 -- Scripts:
 
-local function BQSPOR_fake_script() -- Visuals.LocalScript 
+local function XLDDKQ_fake_script() -- Visuals.LocalScript 
 	local script = Instance.new('LocalScript', Visuals)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -147,8 +189,8 @@ local function BQSPOR_fake_script() -- Visuals.LocalScript
 	end)
 	
 end
-coroutine.wrap(BQSPOR_fake_script)()
-local function RJXB_fake_script() -- OldGod.LocalScript 
+coroutine.wrap(XLDDKQ_fake_script)()
+local function YJIAW_fake_script() -- OldGod.LocalScript 
 	local script = Instance.new('LocalScript', OldGod)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -325,8 +367,41 @@ local function RJXB_fake_script() -- OldGod.LocalScript
 	end)
 	
 end
-coroutine.wrap(RJXB_fake_script)()
-local function GPJV_fake_script() -- Main_3.LocalScript 
+coroutine.wrap(YJIAW_fake_script)()
+local function IPVIXNX_fake_script() -- VoidTp.LocalScript 
+	local script = Instance.new('LocalScript', VoidTp)
+
+	script.Parent.MouseButton1Down:connect(function()
+		
+		game:GetService("TeleportService"):Teleport("10767870749")
+	
+	end)
+	
+end
+coroutine.wrap(IPVIXNX_fake_script)()
+local function NIDYDJB_fake_script() -- ZHub.LocalScript 
+	local script = Instance.new('LocalScript', ZHub)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Zu0aX/BoogaBooga2019/main/Zu0aX"))()
+	
+	
+	end)
+	
+end
+coroutine.wrap(NIDYDJB_fake_script)()
+local function RXZTFO_fake_script() -- InfYield.LocalScript 
+	local script = Instance.new('LocalScript', InfYield)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	
+	
+	end)
+	
+end
+coroutine.wrap(RXZTFO_fake_script)()
+local function ZNHUG_fake_script() -- Main_3.LocalScript 
 	local script = Instance.new('LocalScript', Main_3)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -335,8 +410,8 @@ local function GPJV_fake_script() -- Main_3.LocalScript
 	end)
 	
 end
-coroutine.wrap(GPJV_fake_script)()
-local function RCVFD_fake_script() -- UnlockFPS.LocalScript 
+coroutine.wrap(ZNHUG_fake_script)()
+local function XCGS_fake_script() -- UnlockFPS.LocalScript 
 	local script = Instance.new('LocalScript', UnlockFPS)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -347,8 +422,8 @@ local function RCVFD_fake_script() -- UnlockFPS.LocalScript
 	end)
 	
 end
-coroutine.wrap(RCVFD_fake_script)()
-local function SVWDE_fake_script() -- CloseGui.LocalScript 
+coroutine.wrap(XCGS_fake_script)()
+local function WODPZTC_fake_script() -- CloseGui.LocalScript 
 	local script = Instance.new('LocalScript', CloseGui)
 
 	
@@ -375,8 +450,8 @@ local function SVWDE_fake_script() -- CloseGui.LocalScript
 	
 	
 end
-coroutine.wrap(SVWDE_fake_script)()
-local function HIDVSS_fake_script() -- GuiHolder.LocalScript 
+coroutine.wrap(WODPZTC_fake_script)()
+local function BFWZIMQ_fake_script() -- GuiHolder.LocalScript 
 	local script = Instance.new('LocalScript', GuiHolder)
 
 	local frame = script.Parent -- path to the frame
@@ -384,9 +459,9 @@ local function HIDVSS_fake_script() -- GuiHolder.LocalScript
 	
 	mouse.KeyDown:connect(function(key) -- whenever a key is pushed down
 		key = key:lower() -- i do this in all my key events, though i don't remember why
-		if key == 'v' then -- if key pressed is h
+		if key == 'q' then -- if key pressed is h
 			frame.Visible = not frame.Visible -- flip between visible/invisible
 		end
 	end)
 end
-coroutine.wrap(HIDVSS_fake_script)()
+coroutine.wrap(BFWZIMQ_fake_script)()
