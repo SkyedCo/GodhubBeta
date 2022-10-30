@@ -1,0 +1,392 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local GuiHolder = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Main = Instance.new("Frame")
+local Main_2 = Instance.new("TextLabel")
+local Visuals = Instance.new("TextButton")
+local OldGod = Instance.new("TextButton")
+local VisualsTab = Instance.new("Frame")
+local Visuals_2 = Instance.new("TextLabel")
+local Main_3 = Instance.new("TextButton")
+local UnlockFPS = Instance.new("TextButton")
+local CloseGui = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+GuiHolder.Name = "GuiHolder"
+GuiHolder.Parent = ScreenGui
+GuiHolder.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+GuiHolder.BorderColor3 = Color3.fromRGB(242, 255, 2)
+GuiHolder.Position = UDim2.new(0.252153963, 0, 0.291358024, 0)
+GuiHolder.Size = UDim2.new(0, 274, 0, 386)
+GuiHolder.Active = true
+GuiHolder.Draggable = true
+
+Title.Name = "Title"
+Title.Parent = GuiHolder
+Title.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderColor3 = Color3.fromRGB(255, 247, 3)
+Title.Size = UDim2.new(0, 274, 0, 50)
+Title.Font = Enum.Font.Cartoon
+Title.Text = "God Hub | Booga"
+Title.TextColor3 = Color3.fromRGB(243, 255, 7)
+Title.TextSize = 30.000
+Title.TextWrapped = true
+
+Main.Name = "Main"
+Main.Parent = GuiHolder
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.Position = UDim2.new(0, 0, 0.129533678, 0)
+Main.Size = UDim2.new(0, 274, 0, 336)
+
+Main_2.Name = "Main"
+Main_2.Parent = Main
+Main_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Main_2.BorderColor3 = Color3.fromRGB(234, 255, 0)
+Main_2.Position = UDim2.new(0, 0, -0.00141870975, 0)
+Main_2.Size = UDim2.new(0, 80, 0, 24)
+Main_2.Font = Enum.Font.SourceSans
+Main_2.Text = "Main"
+Main_2.TextColor3 = Color3.fromRGB(225, 2, 255)
+Main_2.TextSize = 14.000
+
+Visuals.Name = "Visuals"
+Visuals.Parent = Main
+Visuals.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Visuals.BorderColor3 = Color3.fromRGB(231, 252, 0)
+Visuals.Position = UDim2.new(0.291970789, 0, 0, 0)
+Visuals.Size = UDim2.new(0, 80, 0, 24)
+Visuals.Font = Enum.Font.SourceSans
+Visuals.Text = "Visuals"
+Visuals.TextColor3 = Color3.fromRGB(255, 255, 0)
+Visuals.TextSize = 14.000
+
+OldGod.Name = "OldGod"
+OldGod.Parent = Main
+OldGod.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+OldGod.BorderColor3 = Color3.fromRGB(40, 40, 40)
+OldGod.Position = UDim2.new(0.0437956229, 0, 0.175595224, 0)
+OldGod.Size = UDim2.new(0, 249, 0, 50)
+OldGod.Font = Enum.Font.Cartoon
+OldGod.Text = "Old God TP"
+OldGod.TextColor3 = Color3.fromRGB(229, 255, 0)
+OldGod.TextSize = 25.000
+OldGod.TextWrapped = true
+
+VisualsTab.Name = "VisualsTab"
+VisualsTab.Parent = GuiHolder
+VisualsTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VisualsTab.BackgroundTransparency = 1.000
+VisualsTab.Position = UDim2.new(0, 0, 0.129533678, 0)
+VisualsTab.Size = UDim2.new(0, 274, 0, 336)
+VisualsTab.Visible = false
+
+Visuals_2.Name = "Visuals"
+Visuals_2.Parent = VisualsTab
+Visuals_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Visuals_2.BorderColor3 = Color3.fromRGB(234, 255, 0)
+Visuals_2.Position = UDim2.new(0.291970789, 0, -0.00439490005, 0)
+Visuals_2.Size = UDim2.new(0, 80, 0, 24)
+Visuals_2.Font = Enum.Font.SourceSans
+Visuals_2.Text = "Visuals"
+Visuals_2.TextColor3 = Color3.fromRGB(255, 7, 251)
+Visuals_2.TextSize = 14.000
+
+Main_3.Name = "Main"
+Main_3.Parent = VisualsTab
+Main_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main_3.BorderColor3 = Color3.fromRGB(231, 252, 0)
+Main_3.Position = UDim2.new(0, 0, -0.00297619053, 0)
+Main_3.Size = UDim2.new(0, 80, 0, 24)
+Main_3.Font = Enum.Font.SourceSans
+Main_3.Text = "Main"
+Main_3.TextColor3 = Color3.fromRGB(255, 238, 1)
+Main_3.TextSize = 14.000
+
+UnlockFPS.Name = "Unlock FPS"
+UnlockFPS.Parent = VisualsTab
+UnlockFPS.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+UnlockFPS.BorderColor3 = Color3.fromRGB(40, 40, 40)
+UnlockFPS.Position = UDim2.new(0.0437956229, 0, 0.175595224, 0)
+UnlockFPS.Size = UDim2.new(0, 249, 0, 50)
+UnlockFPS.Font = Enum.Font.Cartoon
+UnlockFPS.Text = "Unlock FPS"
+UnlockFPS.TextColor3 = Color3.fromRGB(229, 255, 0)
+UnlockFPS.TextSize = 25.000
+UnlockFPS.TextWrapped = true
+
+CloseGui.Name = "Close Gui"
+CloseGui.Parent = VisualsTab
+CloseGui.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+CloseGui.BorderColor3 = Color3.fromRGB(40, 40, 40)
+CloseGui.Position = UDim2.new(0.0437956229, 0, 0.324404746, 0)
+CloseGui.Size = UDim2.new(0, 249, 0, 50)
+CloseGui.Font = Enum.Font.Cartoon
+CloseGui.Text = "Destroy GUI"
+CloseGui.TextColor3 = Color3.fromRGB(229, 255, 0)
+CloseGui.TextSize = 25.000
+CloseGui.TextWrapped = true
+
+-- Scripts:
+
+local function BQSPOR_fake_script() -- Visuals.LocalScript 
+	local script = Instance.new('LocalScript', Visuals)
+
+	script.Parent.MouseButton1Down:connect(function()
+		VisualsTab.Visible = true
+		Main.Visible = false
+	end)
+	
+end
+coroutine.wrap(BQSPOR_fake_script)()
+local function RJXB_fake_script() -- OldGod.LocalScript 
+	local script = Instance.new('LocalScript', OldGod)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Workspace").TpBack.TopOfWhiteAntArea.Position)
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	
+		wait(3)
+		--tp 1
+	
+	
+		local teleport_table = {
+			location1 = Vector3.new( -1034, -3, -603
+	
+			)
+	
+		}
+	
+		local tween_s = game:GetService('TweenService')
+		local tweeninfo = TweenInfo.new(10,Enum.EasingStyle.Linear)
+	
+		local lp = game.Players.LocalPlayer
+	
+		function bypass_teleport(v)
+			if lp.Character and 
+				lp.Character:FindFirstChild('HumanoidRootPart') then
+				local cf = CFrame.new(v)
+				local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+	
+	
+	
+	
+	
+				a:Play()
+				-- a.Completed:Wait()
+				-- print('Teleporting Done!')
+			end
+		end
+	
+		bypass_teleport(teleport_table.location1)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		-- end of tp 1
+		wait(11)
+	
+		local teleport_table = {
+			location1 = Vector3.new( -1079, -6, -681
+	
+			)
+	
+		}
+	
+		local tween_s = game:GetService('TweenService')
+		local tweeninfo = TweenInfo.new(7,Enum.EasingStyle.Linear)
+	
+		local lp = game.Players.LocalPlayer
+	
+		function bypass_teleport(v)
+			if lp.Character and 
+				lp.Character:FindFirstChild('HumanoidRootPart') then
+				local cf = CFrame.new(v)
+				local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+	
+	
+	
+	
+	
+				a:Play()
+				-- a.Completed:Wait()
+				-- print('Teleporting Done!')
+			end
+		end
+	
+		bypass_teleport(teleport_table.location1)
+	
+	
+	
+	
+	
+		-- tp 2
+	
+	
+	
+		wait(8)
+	
+	
+		local teleport_table = {
+			location1 = Vector3.new( -1099, -206, -687
+	
+			)
+	
+		}
+	
+		local tween_s = game:GetService('TweenService')
+		local tweeninfo = TweenInfo.new(10,Enum.EasingStyle.Linear)
+	
+		local lp = game.Players.LocalPlayer
+	
+		function bypass_teleport(v)
+			if lp.Character and 
+				lp.Character:FindFirstChild('HumanoidRootPart') then
+				local cf = CFrame.new(v)
+				local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+	
+	
+	
+	
+	
+				a:Play()
+				-- a.Completed:Wait()
+				-- print('Teleporting Done!')
+			end
+		end
+	
+		bypass_teleport(teleport_table.location1)
+	
+	
+	
+		-- tp 2
+	
+	
+	
+		wait(10)
+	
+	
+		local teleport_table = {
+			location1 = Vector3.new( -1092, -207, -563
+	
+			)
+	
+		}
+	
+		local tween_s = game:GetService('TweenService')
+		local tweeninfo = TweenInfo.new(10,Enum.EasingStyle.Linear)
+	
+		local lp = game.Players.LocalPlayer
+	
+		function bypass_teleport(v)
+			if lp.Character and 
+				lp.Character:FindFirstChild('HumanoidRootPart') then
+				local cf = CFrame.new(v)
+				local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+	
+	
+	
+	
+	
+				a:Play()
+				-- a.Completed:Wait()
+				-- print('Teleporting Done!')
+			end
+		end
+	
+		bypass_teleport(teleport_table.location1)
+	
+	
+	
+	
+	
+	end)
+	
+end
+coroutine.wrap(RJXB_fake_script)()
+local function GPJV_fake_script() -- Main_3.LocalScript 
+	local script = Instance.new('LocalScript', Main_3)
+
+	script.Parent.MouseButton1Down:connect(function()
+		Main.Visible = true
+		VisualsTab.Visible = false
+	end)
+	
+end
+coroutine.wrap(GPJV_fake_script)()
+local function RCVFD_fake_script() -- UnlockFPS.LocalScript 
+	local script = Instance.new('LocalScript', UnlockFPS)
+
+	script.Parent.MouseButton1Down:connect(function()
+		setfpscap(1000)
+	
+	
+	
+	end)
+	
+end
+coroutine.wrap(RCVFD_fake_script)()
+local function SVWDE_fake_script() -- CloseGui.LocalScript 
+	local script = Instance.new('LocalScript', CloseGui)
+
+	
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("CoreGui"):WaitForChild("ScreenGui"):Destroy()
+	
+	end)
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+end
+coroutine.wrap(SVWDE_fake_script)()
+local function HIDVSS_fake_script() -- GuiHolder.LocalScript 
+	local script = Instance.new('LocalScript', GuiHolder)
+
+	local frame = script.Parent -- path to the frame
+	local mouse = game:GetService('Players').LocalPlayer:GetMouse(); -- we need the mouse object, which also has the keyboard
+	
+	mouse.KeyDown:connect(function(key) -- whenever a key is pushed down
+		key = key:lower() -- i do this in all my key events, though i don't remember why
+		if key == 'v' then -- if key pressed is h
+			frame.Visible = not frame.Visible -- flip between visible/invisible
+		end
+	end)
+end
+coroutine.wrap(HIDVSS_fake_script)()
