@@ -4,194 +4,246 @@
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
-local GuiHolder = Instance.new("Frame")
-local Title = Instance.new("TextLabel")
+local Loader = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local UICorner_2 = Instance.new("UICorner")
+local KeyHere = Instance.new("TextBox")
+local UICorner_3 = Instance.new("UICorner")
+local Load = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local CloseLoad = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
 local Main = Instance.new("Frame")
-local Main_2 = Instance.new("TextLabel")
-local Visuals = Instance.new("TextButton")
-local OldGod = Instance.new("TextButton")
-local VoidTp = Instance.new("TextButton")
-local ZHub = Instance.new("TextButton")
-local InfYield = Instance.new("TextButton")
-local VisualsTab = Instance.new("Frame")
-local Visuals_2 = Instance.new("TextLabel")
-local Main_3 = Instance.new("TextButton")
-local UnlockFPS = Instance.new("TextButton")
-local CloseGui = Instance.new("TextButton")
+local UIGradient_2 = Instance.new("UIGradient")
+local UICorner_6 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local UICorner_7 = Instance.new("UICorner")
+local CloseGUIMAIN = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Tab1 = Instance.new("Frame")
+local OldGodTP = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local FPS = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
 
 --Properties:
 
 ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-GuiHolder.Name = "GuiHolder"
-GuiHolder.Parent = ScreenGui
-GuiHolder.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-GuiHolder.BorderColor3 = Color3.fromRGB(242, 255, 2)
-GuiHolder.Position = UDim2.new(0.252153963, 0, 0.291358024, 0)
-GuiHolder.Size = UDim2.new(0, 274, 0, 386)
-GuiHolder.Active = true
-GuiHolder.Draggable = true
+Loader.Name = "Loader"
+Loader.Parent = ScreenGui
+Loader.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Loader.Position = UDim2.new(0.252153933, 0, 0.335802466, 0)
+Loader.Size = UDim2.new(0, 267, 0, 139)
+Loader.Active = true
+Loader.Draggable = true
 
-Title.Name = "Title"
-Title.Parent = GuiHolder
-Title.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Title.BorderColor3 = Color3.fromRGB(255, 247, 3)
-Title.Size = UDim2.new(0, 274, 0, 50)
-Title.Font = Enum.Font.Cartoon
-Title.Text = "God Hub | Booga"
-Title.TextColor3 = Color3.fromRGB(243, 255, 7)
-Title.TextSize = 30.000
-Title.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(0.0299999993, 10)
+UICorner.Parent = Loader
+
+TextLabel.Parent = Loader
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 0.600
+TextLabel.Position = UDim2.new(0.0299625471, 0, 0.0647482127, 0)
+TextLabel.Size = UDim2.new(0, 250, 0, 121)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = ""
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(142, 18, 195)), ColorSequenceKeypoint.new(0.69, Color3.fromRGB(51, 26, 166)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(10, 31, 153))}
+UIGradient.Parent = TextLabel
+
+UICorner_2.Parent = TextLabel
+
+KeyHere.Name = "KeyHere"
+KeyHere.Parent = Loader
+KeyHere.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+KeyHere.Position = UDim2.new(0.187265918, 0, 0.294964015, 0)
+KeyHere.Size = UDim2.new(0, 166, 0, 26)
+KeyHere.Font = Enum.Font.Michroma
+KeyHere.Text = "key"
+KeyHere.TextColor3 = Color3.fromRGB(255, 42, 56)
+KeyHere.TextSize = 14.000
+KeyHere.TextWrapped = true
+
+UICorner_3.Parent = KeyHere
+
+Load.Name = "Load"
+Load.Parent = Loader
+Load.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Load.BackgroundTransparency = 0.900
+Load.Position = UDim2.new(0.157303393, 0, 0.553956866, 0)
+Load.Size = UDim2.new(0, 182, 0, 38)
+Load.Font = Enum.Font.Michroma
+Load.Text = "Load Gui"
+Load.TextColor3 = Color3.fromRGB(255, 0, 4)
+Load.TextSize = 14.000
+
+UICorner_4.CornerRadius = UDim.new(0.5, 8)
+UICorner_4.Parent = Load
+
+TextLabel_2.Parent = Loader
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0299625471, 0, 0.0647481978, 0)
+TextLabel_2.Size = UDim2.new(0, 127, 0, 17)
+TextLabel_2.Font = Enum.Font.Highway
+TextLabel_2.Text = "Vibrant Hub | Private"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel_2.TextSize = 14.000
+
+CloseLoad.Name = "Close Load"
+CloseLoad.Parent = Loader
+CloseLoad.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseLoad.BackgroundTransparency = 1.000
+CloseLoad.Position = UDim2.new(0.83895129, 0, 0, 0)
+CloseLoad.Size = UDim2.new(0, 34, 0, 38)
+CloseLoad.Font = Enum.Font.SourceSans
+CloseLoad.Text = "x"
+CloseLoad.TextColor3 = Color3.fromRGB(255, 34, 38)
+CloseLoad.TextSize = 22.000
+
+UICorner_5.CornerRadius = UDim.new(2, 8)
+UICorner_5.Parent = CloseLoad
 
 Main.Name = "Main"
-Main.Parent = GuiHolder
+Main.Parent = ScreenGui
 Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Main.BackgroundTransparency = 1.000
-Main.Position = UDim2.new(0, 0, 0.129533678, 0)
-Main.Size = UDim2.new(0, 274, 0, 336)
+Main.Position = UDim2.new(0.230901852, 0, 0.311111122, 0)
+Main.Size = UDim2.new(0, 341, 0, 182)
+Main.Visible = false
+Main.Active = true
+Main.Draggable = true
 
-Main_2.Name = "Main"
-Main_2.Parent = Main
-Main_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Main_2.BorderColor3 = Color3.fromRGB(234, 255, 0)
-Main_2.Position = UDim2.new(0, 0, -0.00141870975, 0)
-Main_2.Size = UDim2.new(0, 80, 0, 24)
-Main_2.Font = Enum.Font.SourceSans
-Main_2.Text = "Main"
-Main_2.TextColor3 = Color3.fromRGB(225, 2, 255)
-Main_2.TextSize = 14.000
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(67, 67, 67))}
+UIGradient_2.Rotation = 90
+UIGradient_2.Parent = Main
 
-Visuals.Name = "Visuals"
-Visuals.Parent = Main
-Visuals.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Visuals.BorderColor3 = Color3.fromRGB(231, 252, 0)
-Visuals.Position = UDim2.new(0.291970789, 0, 0, 0)
-Visuals.Size = UDim2.new(0, 80, 0, 24)
-Visuals.Font = Enum.Font.SourceSans
-Visuals.Text = "Visuals"
-Visuals.TextColor3 = Color3.fromRGB(255, 255, 0)
-Visuals.TextSize = 14.000
+UICorner_6.Parent = Main
 
-OldGod.Name = "OldGod"
-OldGod.Parent = Main
-OldGod.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-OldGod.BorderColor3 = Color3.fromRGB(40, 40, 40)
-OldGod.Position = UDim2.new(0.0437956229, 0, 0.175595224, 0)
-OldGod.Size = UDim2.new(0, 249, 0, 50)
-OldGod.Font = Enum.Font.Cartoon
-OldGod.Text = "Old God TP"
-OldGod.TextColor3 = Color3.fromRGB(229, 255, 0)
-OldGod.TextSize = 25.000
-OldGod.TextWrapped = true
+TextLabel_3.Parent = Main
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BackgroundTransparency = 0.800
+TextLabel_3.Position = UDim2.new(0.0234604105, 0, 0.0154185025, 0)
+TextLabel_3.Size = UDim2.new(0, 175, 0, 22)
+TextLabel_3.Font = Enum.Font.Fantasy
+TextLabel_3.Text = "Vibrant Hub | Private"
+TextLabel_3.TextColor3 = Color3.fromRGB(71, 10, 255)
+TextLabel_3.TextSize = 20.000
+TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_3.TextYAlignment = Enum.TextYAlignment.Top
 
-VoidTp.Name = "Void Tp"
-VoidTp.Parent = Main
-VoidTp.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-VoidTp.BorderColor3 = Color3.fromRGB(40, 40, 40)
-VoidTp.Position = UDim2.new(0.0437956229, 0, 0.324404746, 0)
-VoidTp.Selectable = false
-VoidTp.Size = UDim2.new(0, 249, 0, 50)
-VoidTp.Font = Enum.Font.Cartoon
-VoidTp.Text = "Void TP"
-VoidTp.TextColor3 = Color3.fromRGB(229, 255, 0)
-VoidTp.TextSize = 25.000
-VoidTp.TextWrapped = true
+UICorner_7.Parent = TextLabel_3
 
-ZHub.Name = "Z Hub"
-ZHub.Parent = Main
-ZHub.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-ZHub.BorderColor3 = Color3.fromRGB(40, 40, 40)
-ZHub.Position = UDim2.new(0.0437956229, 0, 0.473214269, 0)
-ZHub.Selectable = false
-ZHub.Size = UDim2.new(0, 249, 0, 50)
-ZHub.Font = Enum.Font.Cartoon
-ZHub.Text = "Zer0 Hub"
-ZHub.TextColor3 = Color3.fromRGB(229, 255, 0)
-ZHub.TextSize = 25.000
-ZHub.TextWrapped = true
+CloseGUIMAIN.Name = "CloseGUIMAIN"
+CloseGUIMAIN.Parent = Main
+CloseGUIMAIN.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+CloseGUIMAIN.BackgroundTransparency = 1.000
+CloseGUIMAIN.Position = UDim2.new(0.912023485, 0, 0, 0)
+CloseGUIMAIN.Size = UDim2.new(0, 30, 0, 29)
+CloseGUIMAIN.Font = Enum.Font.Cartoon
+CloseGUIMAIN.Text = "x"
+CloseGUIMAIN.TextColor3 = Color3.fromRGB(33, 25, 255)
+CloseGUIMAIN.TextSize = 30.000
 
-InfYield.Name = "Inf Yield"
-InfYield.Parent = Main
-InfYield.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-InfYield.BorderColor3 = Color3.fromRGB(40, 40, 40)
-InfYield.Position = UDim2.new(0.0437956229, 0, 0.622023821, 0)
-InfYield.Selectable = false
-InfYield.Size = UDim2.new(0, 249, 0, 50)
-InfYield.Font = Enum.Font.Cartoon
-InfYield.Text = "Inf yield"
-InfYield.TextColor3 = Color3.fromRGB(229, 255, 0)
-InfYield.TextSize = 25.000
-InfYield.TextWrapped = true
+UICorner_8.CornerRadius = UDim.new(2, 8)
+UICorner_8.Parent = CloseGUIMAIN
 
-VisualsTab.Name = "VisualsTab"
-VisualsTab.Parent = GuiHolder
-VisualsTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-VisualsTab.BackgroundTransparency = 1.000
-VisualsTab.Position = UDim2.new(0, 0, 0.129533678, 0)
-VisualsTab.Size = UDim2.new(0, 274, 0, 336)
-VisualsTab.Visible = false
+Tab1.Name = "Tab1"
+Tab1.Parent = Main
+Tab1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Tab1.BorderColor3 = Color3.fromRGB(21, 0, 255)
+Tab1.Position = UDim2.new(0.0234604105, 0, 0.236263737, 0)
+Tab1.Size = UDim2.new(0, 324, 0, 129)
 
-Visuals_2.Name = "Visuals"
-Visuals_2.Parent = VisualsTab
-Visuals_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Visuals_2.BorderColor3 = Color3.fromRGB(234, 255, 0)
-Visuals_2.Position = UDim2.new(0.291970789, 0, -0.00439490005, 0)
-Visuals_2.Size = UDim2.new(0, 80, 0, 24)
-Visuals_2.Font = Enum.Font.SourceSans
-Visuals_2.Text = "Visuals"
-Visuals_2.TextColor3 = Color3.fromRGB(255, 7, 251)
-Visuals_2.TextSize = 14.000
+OldGodTP.Name = "Old God TP"
+OldGodTP.Parent = Tab1
+OldGodTP.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+OldGodTP.BackgroundTransparency = 0.500
+OldGodTP.Position = UDim2.new(0.0192925725, 0, 0.0620155036, 0)
+OldGodTP.Size = UDim2.new(0, 311, 0, 50)
+OldGodTP.Font = Enum.Font.Michroma
+OldGodTP.Text = "Old God TP"
+OldGodTP.TextColor3 = Color3.fromRGB(8, 0, 255)
+OldGodTP.TextSize = 18.000
 
-Main_3.Name = "Main"
-Main_3.Parent = VisualsTab
-Main_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Main_3.BorderColor3 = Color3.fromRGB(231, 252, 0)
-Main_3.Position = UDim2.new(0, 0, -0.00297619053, 0)
-Main_3.Size = UDim2.new(0, 80, 0, 24)
-Main_3.Font = Enum.Font.SourceSans
-Main_3.Text = "Main"
-Main_3.TextColor3 = Color3.fromRGB(255, 238, 1)
-Main_3.TextSize = 14.000
+UICorner_9.CornerRadius = UDim.new(0.300000012, 0)
+UICorner_9.Parent = OldGodTP
 
-UnlockFPS.Name = "Unlock FPS"
-UnlockFPS.Parent = VisualsTab
-UnlockFPS.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-UnlockFPS.BorderColor3 = Color3.fromRGB(40, 40, 40)
-UnlockFPS.Position = UDim2.new(0.0437956229, 0, 0.175595224, 0)
-UnlockFPS.Size = UDim2.new(0, 249, 0, 50)
-UnlockFPS.Font = Enum.Font.Cartoon
-UnlockFPS.Text = "Unlock FPS"
-UnlockFPS.TextColor3 = Color3.fromRGB(229, 255, 0)
-UnlockFPS.TextSize = 25.000
-UnlockFPS.TextWrapped = true
+FPS.Name = "FPS"
+FPS.Parent = Tab1
+FPS.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+FPS.BackgroundTransparency = 0.500
+FPS.Position = UDim2.new(0.0192925725, 0, 0.496124029, 0)
+FPS.Size = UDim2.new(0, 311, 0, 50)
+FPS.Font = Enum.Font.Michroma
+FPS.Text = "Unlock FPS"
+FPS.TextColor3 = Color3.fromRGB(8, 0, 255)
+FPS.TextSize = 18.000
 
-CloseGui.Name = "Close Gui"
-CloseGui.Parent = VisualsTab
-CloseGui.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-CloseGui.BorderColor3 = Color3.fromRGB(40, 40, 40)
-CloseGui.Position = UDim2.new(0.0437956229, 0, 0.324404746, 0)
-CloseGui.Size = UDim2.new(0, 249, 0, 50)
-CloseGui.Font = Enum.Font.Cartoon
-CloseGui.Text = "Destroy GUI"
-CloseGui.TextColor3 = Color3.fromRGB(229, 255, 0)
-CloseGui.TextSize = 25.000
-CloseGui.TextWrapped = true
+UICorner_10.CornerRadius = UDim.new(0.300000012, 0)
+UICorner_10.Parent = FPS
+
+TextLabel_4.Parent = Main
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderColor3 = Color3.fromRGB(85, 0, 255)
+TextLabel_4.Position = UDim2.new(0.0234604105, 0, 0.159340665, 0)
+TextLabel_4.Size = UDim2.new(0, 47, 0, 13)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Main"
+TextLabel_4.TextColor3 = Color3.fromRGB(8, 0, 255)
+TextLabel_4.TextSize = 14.000
 
 -- Scripts:
 
-local function XLDDKQ_fake_script() -- Visuals.LocalScript 
-	local script = Instance.new('LocalScript', Visuals)
+local function RGZFL_fake_script() -- Load.LocalScript 
+	local script = Instance.new('LocalScript', Load)
 
 	script.Parent.MouseButton1Down:connect(function()
-		VisualsTab.Visible = true
-		Main.Visible = false
+		if KeyHere.Text == "SkyOwnsYou" then
+			Loader.Visible = false
+			wait(2)
+			Main.Visible = true
+	
+		end
 	end)
 	
 end
-coroutine.wrap(XLDDKQ_fake_script)()
-local function YJIAW_fake_script() -- OldGod.LocalScript 
-	local script = Instance.new('LocalScript', OldGod)
+coroutine.wrap(RGZFL_fake_script)()
+local function NVKIMAN_fake_script() -- CloseLoad.LocalScript 
+	local script = Instance.new('LocalScript', CloseLoad)
+
+	script.Parent.MouseButton1Down:connect(function()
+		Loader.Visible = false
+	end)
+	
+end
+coroutine.wrap(NVKIMAN_fake_script)()
+local function NYQPQG_fake_script() -- CloseGUIMAIN.LocalScript 
+	local script = Instance.new('LocalScript', CloseGUIMAIN)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("CoreGui"):WaitForChild("ScreenGui"):Destroy()
+		game:GetService("CoreGui"):WaitForChild("ScreenGui"):Destroy()
+		game:GetService("CoreGui"):WaitForChild("ScreenGui"):Destroy()
+		game:GetService("CoreGui"):WaitForChild("ScreenGui"):Destroy()
+	
+	end)
+	
+	
+end
+coroutine.wrap(NYQPQG_fake_script)()
+local function OUHK_fake_script() -- OldGodTP.LocalScript 
+	local script = Instance.new('LocalScript', OldGodTP)
 
 	script.Parent.MouseButton1Down:connect(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Workspace").TpBack.TopOfWhiteAntArea.Position)
@@ -366,102 +418,38 @@ local function YJIAW_fake_script() -- OldGod.LocalScript
 	
 	end)
 	
-end
-coroutine.wrap(YJIAW_fake_script)()
-local function IPVIXNX_fake_script() -- VoidTp.LocalScript 
-	local script = Instance.new('LocalScript', VoidTp)
-
-	script.Parent.MouseButton1Down:connect(function()
-		
-		game:GetService("TeleportService"):Teleport("10767870749")
-	
-	end)
 	
 end
-coroutine.wrap(IPVIXNX_fake_script)()
-local function NIDYDJB_fake_script() -- ZHub.LocalScript 
-	local script = Instance.new('LocalScript', ZHub)
-
-	script.Parent.MouseButton1Down:connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Zu0aX/BoogaBooga2019/main/Zu0aX"))()
-	
-	
-	end)
-	
-end
-coroutine.wrap(NIDYDJB_fake_script)()
-local function RXZTFO_fake_script() -- InfYield.LocalScript 
-	local script = Instance.new('LocalScript', InfYield)
-
-	script.Parent.MouseButton1Down:connect(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-	
-	
-	end)
-	
-end
-coroutine.wrap(RXZTFO_fake_script)()
-local function ZNHUG_fake_script() -- Main_3.LocalScript 
-	local script = Instance.new('LocalScript', Main_3)
-
-	script.Parent.MouseButton1Down:connect(function()
-		Main.Visible = true
-		VisualsTab.Visible = false
-	end)
-	
-end
-coroutine.wrap(ZNHUG_fake_script)()
-local function XCGS_fake_script() -- UnlockFPS.LocalScript 
-	local script = Instance.new('LocalScript', UnlockFPS)
+coroutine.wrap(OUHK_fake_script)()
+local function ZUVI_fake_script() -- FPS.LocalScript 
+	local script = Instance.new('LocalScript', FPS)
 
 	script.Parent.MouseButton1Down:connect(function()
 		setfpscap(1000)
-	
-	
-	
 	end)
 	
 end
-coroutine.wrap(XCGS_fake_script)()
-local function WODPZTC_fake_script() -- CloseGui.LocalScript 
-	local script = Instance.new('LocalScript', CloseGui)
+coroutine.wrap(ZUVI_fake_script)()
+local function IQTZ_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
 
 	
-	script.Parent.MouseButton1Down:connect(function()
-		game:GetService("CoreGui"):WaitForChild("ScreenGui"):Destroy()
-	
-	end)
-		
 	
 	
 	
 	
+	if Loader.Visible == true then
+		local frame = script.Parent -- path to the frame
+		local mouse = game:GetService('Players').LocalPlayer:GetMouse(); -- we need the mouse object, which also has the keyboard
 	
+		mouse.KeyDown:connect(function(key) -- whenever a key is pushed down
+			key = key:lower() -- i do this in all my key events, though i don't remember why
+			if key == 'q' then -- if key pressed is h
+				frame.Visible = not frame.Visible -- flip between visible/invisible
+			end
+		end)
+	end
+	end
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-end
-coroutine.wrap(WODPZTC_fake_script)()
-local function BFWZIMQ_fake_script() -- GuiHolder.LocalScript 
-	local script = Instance.new('LocalScript', GuiHolder)
 
-	local frame = script.Parent -- path to the frame
-	local mouse = game:GetService('Players').LocalPlayer:GetMouse(); -- we need the mouse object, which also has the keyboard
-	
-	mouse.KeyDown:connect(function(key) -- whenever a key is pushed down
-		key = key:lower() -- i do this in all my key events, though i don't remember why
-		if key == 'q' then -- if key pressed is h
-			frame.Visible = not frame.Visible -- flip between visible/invisible
-		end
-	end)
-end
-coroutine.wrap(BFWZIMQ_fake_script)()
+coroutine.wrap(IQTZ_fake_script)()
